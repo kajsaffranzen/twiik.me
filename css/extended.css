@@ -1,6 +1,6 @@
 .about, .about2{
 	width: 100%;
-	height: 70%;
+	height: 80%;
 }
 
 #nav-text{
@@ -25,7 +25,29 @@
 	text-align: center;
 	padding-top: 7px;
 	margin-top: 3px;
+	margin-right: 2px;
 }
+
+/*Header*/
+.top-text{
+	
+	font-family: "Arial Rounded MT bold";
+
+}
+
+h1.top-text{
+	font-size: 7em;
+	color: #ffffff;
+	font-weight: bold;
+	
+}
+
+h3.top-text{
+	font-size: 2em;
+	color: #7F7F7F;
+}
+
+
 
 .section_label{
 	font-size: 5.3em;
@@ -50,17 +72,24 @@ h2.section_label{
 	font-size: 1.7em;
 	font-weight: lighter;
 	color: #000000;
+	margin-top: 7vh;
+	margin-left: 2vw;
 }
 
 .about-section{
 	margin-top: 8vw;
 }
 
+a{
+	text-decoration: none;
+}
 .a_ref{
 	font-family: Avenir;
 	font-size: 2.7em;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	color: #00DFFB;
+	margin-left: 2vw;
+	/*text-decoration: none;*/
 }
 
 .button{
@@ -70,8 +99,9 @@ h2.section_label{
 	font-size: 15pt;
 	font-weight: light;
 	border-style: solid;
+	font-style: #000;
 	border-width: 0px;
-	width: 250px;
+	width: 203px;
 	height: 55px;
 	text-align: center;
 	padding-top: 7px;
@@ -120,6 +150,9 @@ h2.section_label{
 }
 
 @media (min-width: 330px) and (max-width: 470px){
+	.about{
+		height: 70%;
+	}
 	#about2{
 		margin-top: 24vh;
 	}
@@ -129,6 +162,18 @@ h2.section_label{
 	}
 	.section_titel{
 		font-size: 1em;
+
+	}
+
+	.section_info{
+		font-size: 1.5em;
+		margin: -4vh 0 0 0;
+		line-height: 1.3;
+	}
+
+	.a_ref{
+		font-size: 1.5em;
+		margin-left: 0px;
 	}
 
 	.button{
@@ -156,6 +201,10 @@ h2.section_label{
 	.about-section{
 		margin-top: 0px;
 		height: 60%;
+	}
+
+	.section_info{
+		font-size: 1.1em;
 	}
 
 	.section_label{
