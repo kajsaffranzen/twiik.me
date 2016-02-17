@@ -125,6 +125,7 @@ a{
 }
 
 #the_table {display: table; width: 100%; }
+#the_table2 {display: Table; width: 100%; }
 
 	
 @media (min-width: 770px) and (max-width: 1080px){
@@ -135,6 +136,14 @@ a{
 }
 
 @media (min-width: 470px) and (max-width: 770px){
+	.about{
+		height: 55%;
+	}
+
+	.about_3{
+		margin-top: 30vh;
+	}
+
 	.about-section{
 		margin-top: 0px;
 		height: 60%;
@@ -144,8 +153,16 @@ a{
 		font-size: 5em;
 	}
 
+	.section_label_color{
+		font-size: 4.9em;
+		line-height: 0.9;
+		margin-top: -2vh;
+
+	}
+
 	.section_titel{
-		font-size: 1.2em;
+		font-size: 1.5em;
+		margin-top: 3vh;
 		margin-right: 13vw;
 	}
 
@@ -156,8 +173,13 @@ a{
 	}
 
 	.img_phone{
-		width: 170px;
+		width: 270px;
+		margin-top: -8vh;
 	}
+
+	#block3 {display: table-footer-group; } /* Will be displayed at the bottom of the pseudo-table */
+	/*#block2 {display: table-row-group;    } /* Will be displayed in the middle */*/
+	#block4 {display: table-header-group; } /* Will be displayed at the top */
 }
 
 @media (min-width: 330px) and (max-width: 470px){
@@ -223,6 +245,10 @@ a{
 	#block1 {display: table-footer-group; } /* Will be displayed at the bottom of the pseudo-table */
 	/*#block2 {display: table-row-group;    } /* Will be displayed in the middle */*/
 	#block2 {display: table-header-group; } /* Will be displayed at the top */
+
+	#block3 {display: table-footer-group; } /* Will be displayed at the bottom of the pseudo-table */
+	/*#block2 {display: table-row-group;    } /* Will be displayed in the middle */*/
+	#block4 {display: table-header-group; } /* Will be displayed at the top */
 
 }
 
