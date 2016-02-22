@@ -248,3 +248,13 @@ footer {
     color: #000000;
 
 }
+@media (min-width: 330px) and (max-width: 470px){
+    
+    footer{
+        padding: 0 0 5px 0;
+    }
+
+    .footer-txt{
+        font-size: 1em;
+    }
+}
