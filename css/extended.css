@@ -24,7 +24,8 @@
 }
 
 .nav-button{
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
+	background-color: transparent;
 	border-radius: 50px;
 	border-style: solid;
 	border-width: 3px;
@@ -50,14 +51,17 @@
 
 h1.top-text{
 	font-size: 7em;
-	color: #ffffff;
-	font-weight: bold;
-	
+	color: #FFF;
+	font-weight: lighter;
+	margin-left: 14vw;
+
 }
 
 h3.top-text{
 	font-size: 2em;
+	font-weight: lighter;
 	color: #7F7F7F;
+	margin-left: 20vw;
 }
 
 
@@ -100,13 +104,14 @@ a{
 	font-family: Avenir;
 	font-size: 2.7em;
 	/*font-weight: bold;*/
-	color: #00DFFB;
+	color: #2ABFD1;
 	margin-left: 2vw;
 	/*text-decoration: none;*/
 }
 
 .button{
-	background-color: #00DFFB;
+	background-color: #2ABFD1;
+	color: #ffffff;
 	border-radius: 50px;
 	font-family: Avenir;
 	font-size: 15pt;
