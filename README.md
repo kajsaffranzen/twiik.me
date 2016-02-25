@@ -1,5 +1,5 @@
 #twiik.me
 
-#Setup
+##Setup
 
-```npm install```
+```npm install``
