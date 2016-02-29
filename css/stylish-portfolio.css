@@ -264,6 +264,10 @@ footer {
     color: #000000;
 
 }
+
+a.footer-txt{
+    color: #000000;
+}
 @media (min-width: 330px) and (max-width: 470px){
     
     footer{

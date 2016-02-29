@@ -46,25 +46,23 @@
 
 .about, .about2, .about3{
 	width: 100%;
-	height: 100%;
+	height: 90%;
 }
 
-.about-info{
+.about-info, .about4, .about5{
 	width: 100%;
-	height: 70%;
+	height: 80%;
 }
 
-.about4, .about5{
+./*about4, .about5{
 	width: 100%;
 	height: 70%;
-}
+}*/
 
 
 /*Header*/
 .top-text{
-	
 	font-family: "Arial Rounded MT bold";
-
 }
 
 h1.top-text{
@@ -72,6 +70,7 @@ h1.top-text{
 	color: #FFF;
 	font-weight: lighter;
 	margin-left: 22vw;
+	font-family: "Arial Rounded MT bold";
 
 }
 
@@ -81,6 +80,7 @@ h3.top-text{
 	color: #ffffff;
 	margin-left: 22vw;
 	margin-top: -1vh;
+	font-family: "Arial Rounded MT bold";
 }
 
 .top-btn{
@@ -98,6 +98,7 @@ h3.top-text{
 	text-align: center;
 	padding-top: 7px;
 	margin-left: 22vw;
+	font-family: Avenir;
 }
 
 
@@ -133,11 +134,13 @@ h2.section_label{
 	margin-top: 13vw;
 }
 
-a{
+a, a:hover{
 	text-decoration: none;
+	font-family: Avenir;
+	color: #ffffff;
 }
 .a_ref{
-	font-family: Avenir;
+	/*font-family: Avenir;*/
 	font-size: 2.7em;
 	/*font-weight: bold;*/
 	color: #2ABFD1;
@@ -159,6 +162,10 @@ a{
 	height: 55px;
 	text-align: center;
 	padding-top: 7px;
+}
+
+a.button{
+	color: #000;
 }
 
 .img_phone{
@@ -183,6 +190,53 @@ a{
 
 #the_table {display: table; width: 100%; }
 #the_table2 {display: table; width: 100%; }
+
+@media (min-width: 1500px) and (max-width: 1600px){
+	@media (min-height: 2500px) and (max-height: 2600px){
+
+		.about-info{
+			height: 60%;
+		}
+
+		.about, .about2, .about3{
+			height: 70%;
+		}
+		.about4, .about5{
+			height: 100%;
+		}
+
+		.about-section{
+			margin: 0px;
+		}
+
+		.a_ref{
+			font-size: 4em;
+		}
+
+		.section_info{
+			font-size: 3.7em;
+		}
+		.section_label, .section_label_color{
+			font-size: 10em;
+		}
+
+		.section_titel{
+			font-size: 3.5em;
+		}
+
+		.button{
+			width: 26vw;
+			height: 4vh;
+			font-size: 3em;
+		}
+
+		.img_phone{
+			width: 650px;
+			margin-top: -7vh;
+		}
+
+	}
+}
 
 @media (min-width: 1080px) and (max-width: 1200px){
 	.about, .about2, .about3{
@@ -262,6 +316,26 @@ a{
 	.img_phone{
 		width: 282px;
 		margin-top: -17vw;
+	}
+
+	@media (min-height: 1000px) and (max-height: 1300px){
+		.about-info{
+			height: 50%;
+		}	
+		.about{
+			height: 60%;
+		}
+		.about2{
+			height: 70%;
+		}
+		.about3, .about4, .about5{
+			height: 75%;
+		}
+
+		.img_phone2{
+			margin-top: -2vh;
+			margin
+		}
 	}
 }
 
@@ -435,8 +509,6 @@ a{
 
 	.section_label{
 		font-size: 2.9em;
-		/*line-height: 1.3;*/
-
 	}
 	
 	.section_label_color{
@@ -482,7 +554,10 @@ a{
 	#block3 {display: table-footer-group; } 
 	#block4 {display: table-header-group; } 
 
-	@media (min-height: 630px) and (max-height: 750px){
+	@media (min-height: 660px) and (max-height: 750px){
+		#mainNav{
+			visibility: hidden;
+		}
 		.about-info, .about2{
 			height: 80%;
 		}
@@ -502,7 +577,38 @@ a{
 
 
 	}
-	@media (min-height: 300px) and (max-height: 630px){
+
+	@media (min-height: 500px) and (max-height: 660px){
+		#mainNav{
+			visibility: hidden;
+		}
+		.about-info, .about2{
+			height: 100%;
+		}
+		.about{
+			height: 120%;
+		}
+		.about2{
+			height: 150%;
+		}
+
+		.about3{
+			height: 120%;
+		}
+		.about4, .about5{
+			height: 100%;
+		}
+
+		.section_info{
+			font-size: 1.3em;
+		}
+
+
+	}
+	@media (min-height: 300px) and (max-height: 500px){
+		#mainNav{
+			visibility: hidden;
+		}
 		.about-info, .about{
 			height: 100%;
 		}
@@ -525,7 +631,9 @@ a{
 }
 
 @media (min-width: 0px) and (max-width: 330px){
-
+	#mainNav{
+		visibility: hidden;
+	}
 	.about-info, .about{
 		height: 60%;
 	}
