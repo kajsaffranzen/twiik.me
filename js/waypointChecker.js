@@ -1,17 +1,12 @@
 var navbarHeight = document.getElementById('mainNav').offsetHeight;
 
 var waypoint = new Waypoint({
-  element: document.getElementById('info'),
+  element: document.getElementById('about'),
   handler: function(direction) {
     $(document).ready(function(){
     	var innerWidth = window.innerWidth;
     	var obj = document.getElementById('mainNav');
 		if (direction === 'down'){	
-			// console.log("i if");
-			
-			// if(innerWidth < 770){
-			// 	console.log("innerWidth är liten: " + innerWidth);
-			// }
 			
 			obj.style.visibility = 'visible';
 			$("#mainNav").css("background-color", "rgba(255,255,255, 1.0)");
@@ -26,9 +21,7 @@ var waypoint = new Waypoint({
 			$(".navbar-default").css("border-color", "rgba(200,200,200, 0.5)");
 		}
 		else {
-			console.log("i else");
-			if(innerWidth < 770){
-				console.log("innerWidth är liten i else: " + innerWidth);
+			if(innerWidth < 670){
 				obj.style.visibility = 'hidden';
 			}
 			else{
@@ -44,8 +37,6 @@ var waypoint = new Waypoint({
 				$(".icon-bar").css("background-color", "#fff");
 				$(".navbar-default").css("border-color", "rgba(200,200,200, 0.0)");
 			}
-
-			
 		}
 	});
   },
